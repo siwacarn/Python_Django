@@ -4,4 +4,5 @@ from django.template import loader
 
 # Create your views here.
 def index(request):
-    return HttpResponse("<h1>Hello,world</h1><b>Welcome to InwZa library</b>")
+    header_str = 'Hello, Python variable'
+    template = loader.get_template('index.html')
